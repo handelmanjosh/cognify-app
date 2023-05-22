@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "html.format.wrapLineLength": 0,
+  "javascript.format.semicolons": "insert",
+  "typescript.format.semicolons": "insert",
+  "javascript.format.insertSpaceAfterCommaDelimiter": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "css.lint.unknownAtRules": "ignore",
+  "[css]": {
+    "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+  },
+}
