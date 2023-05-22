@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF Regular';
+  src: url("/fonts/SFRegular.otf") format("opentype");
+}
+html body {
+  color: white;
+  background-color: rgb(30 41 59);
+  font-family: 'SF Regular';
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* need to add breakpoint for mobile padding */
+/* MAYBE */
+
+.welcome-text-main {
+  font-family: "Courier New", monospace;
+}
+
+.button-bounce-smaller-animate:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+.dots-container {
+
+} 
+.dot {
+    animation: bounce 1s ease-in-out infinite;
+}
+.dots-container div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+  
+.dots-container div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+  
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}  
+  
+  
+  
+  
+  
+  
+
+
+
