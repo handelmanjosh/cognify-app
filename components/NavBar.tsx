@@ -48,10 +48,10 @@ export default function NavBar({ user }: NavBarProps) {
     };
     return (
         <div className="flex flex-row justify-between mt-1 items-center w-full h-[5%]">
-            <div className="flex flex-row items-center gap-4 justify-start">
+            <div className="flex flex-row items-center w-auto h-auto rounded-full overflow-hidden justify-center">
                 <Link href="/">
                     <img
-                        src="/cognify-logo.png"
+                        src="/cognify-logo.jpeg"
                         alt="logo"
                         className="w-5 h-5"
                     />
